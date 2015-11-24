@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090E8DE043A158457F8D3C75 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DEE164D6AD03650A88A15D /* Pods.framework */; };
 		9069351A1C03DC5E00DED698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906935191C03DC5E00DED698 /* AppDelegate.swift */; };
 		9069351C1C03DC5E00DED698 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9069351B1C03DC5E00DED698 /* ViewController.swift */; };
 		9069351F1C03DC5E00DED698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9069351D1C03DC5E00DED698 /* Main.storyboard */; };
 		906935211C03DC5E00DED698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 906935201C03DC5E00DED698 /* Assets.xcassets */; };
 		906935241C03DC5E00DED698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 906935221C03DC5E00DED698 /* LaunchScreen.storyboard */; };
+		906935311C03E91C00DED698 /* KJAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9069352F1C03E91C00DED698 /* KJAlertController.swift */; };
+		906935321C03E91C00DED698 /* KJAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 906935301C03E91C00DED698 /* KJAlertController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E9DE909BE9DCA16D703D425 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		51887EF520F624EF0CB49599 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		906935161C03DC5D00DED698 /* KJAlertController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KJAlertController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		906935191C03DC5E00DED698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9069351B1C03DC5E00DED698 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		906935201C03DC5E00DED698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		906935231C03DC5E00DED698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		906935251C03DC5E00DED698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9069352F1C03E91C00DED698 /* KJAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KJAlertController.swift; sourceTree = "<group>"; };
+		906935301C03E91C00DED698 /* KJAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KJAlertController.xib; sourceTree = "<group>"; };
+		B5DEE164D6AD03650A88A15D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090E8DE043A158457F8D3C75 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F58C02FA1459F00C741B48D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E9DE909BE9DCA16D703D425 /* Pods.debug.xcconfig */,
+				51887EF520F624EF0CB49599 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		87EE3054F0C5070E8B3D040F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5DEE164D6AD03650A88A15D /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9069350D1C03DC5D00DED698 = {
 			isa = PBXGroup;
 			children = (
 				906935181C03DC5E00DED698 /* KJAlertController */,
 				906935171C03DC5D00DED698 /* Products */,
+				1F58C02FA1459F00C741B48D /* Pods */,
+				87EE3054F0C5070E8B3D040F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +88,8 @@
 				906935201C03DC5E00DED698 /* Assets.xcassets */,
 				906935221C03DC5E00DED698 /* LaunchScreen.storyboard */,
 				906935251C03DC5E00DED698 /* Info.plist */,
+				9069352F1C03E91C00DED698 /* KJAlertController.swift */,
+				906935301C03E91C00DED698 /* KJAlertController.xib */,
 			);
 			path = KJAlertController;
 			sourceTree = "<group>";
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 906935281C03DC5E00DED698 /* Build configuration list for PBXNativeTarget "KJAlertController" */;
 			buildPhases = (
+				75761999313A7B8BE720B884 /* Check Pods Manifest.lock */,
 				906935121C03DC5D00DED698 /* Sources */,
 				906935131C03DC5D00DED698 /* Frameworks */,
 				906935141C03DC5D00DED698 /* Resources */,
+				52D754B9E16C1A70AE32D910 /* Embed Pods Frameworks */,
+				9AECD9699F7C244283420AF1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,10 +158,59 @@
 				906935241C03DC5E00DED698 /* LaunchScreen.storyboard in Resources */,
 				906935211C03DC5E00DED698 /* Assets.xcassets in Resources */,
 				9069351F1C03DC5E00DED698 /* Main.storyboard in Resources */,
+				906935321C03E91C00DED698 /* KJAlertController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52D754B9E16C1A70AE32D910 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75761999313A7B8BE720B884 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9AECD9699F7C244283420AF1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		906935121C03DC5D00DED698 /* Sources */ = {
@@ -137,6 +219,7 @@
 			files = (
 				9069351C1C03DC5E00DED698 /* ViewController.swift in Sources */,
 				9069351A1C03DC5E00DED698 /* AppDelegate.swift in Sources */,
+				906935311C03E91C00DED698 /* KJAlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,23 +330,27 @@
 		};
 		906935291C03DC5E00DED698 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E9DE909BE9DCA16D703D425 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KJAlertController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.arborapps.KJAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
 		9069352A1C03DC5E00DED698 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51887EF520F624EF0CB49599 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KJAlertController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.arborapps.KJAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -286,6 +373,7 @@
 				9069352A1C03DC5E00DED698 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

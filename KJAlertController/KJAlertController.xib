@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KJAlertController" customModule="KJAlertController" customModuleProvider="target">
+            <connections>
+                <outlet property="messageLabel" destination="9RS-t4-jse" id="0V3-aV-Ffd"/>
+                <outlet property="scrollView" destination="4fY-LS-dT0" id="mfm-kM-d1q"/>
+                <outlet property="titleLabel" destination="zUf-w0-f4T" id="14g-wh-Mns"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUf-w0-f4T">
+                    <rect key="frame" x="8" y="16" width="584" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9RS-t4-jse">
+                    <rect key="frame" x="8" y="45" width="584" height="18"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fY-LS-dT0">
+                    <rect key="frame" x="8" y="71" width="584" height="513"/>
+                    <animations/>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zUf-w0-f4T" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" constant="8" id="12t-hN-ZKv"/>
+                <constraint firstItem="4fY-LS-dT0" firstAttribute="leading" secondItem="9RS-t4-jse" secondAttribute="leading" id="30o-Sy-WtP"/>
+                <constraint firstItem="9RS-t4-jse" firstAttribute="trailing" secondItem="4fY-LS-dT0" secondAttribute="trailing" id="NZb-PL-smS"/>
+                <constraint firstItem="9RS-t4-jse" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="RqU-o1-BCC"/>
+                <constraint firstItem="zUf-w0-f4T" firstAttribute="leading" secondItem="9RS-t4-jse" secondAttribute="leading" id="V90-TI-rm9"/>
+                <constraint firstItem="4fY-LS-dT0" firstAttribute="top" secondItem="9RS-t4-jse" secondAttribute="bottom" constant="8" symbolic="YES" id="YfE-z5-2kb"/>
+                <constraint firstItem="9RS-t4-jse" firstAttribute="top" secondItem="zUf-w0-f4T" secondAttribute="bottom" constant="8" symbolic="YES" id="Ywl-VO-nC5"/>
+                <constraint firstItem="zUf-w0-f4T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="dHo-w0-xbx"/>
+                <constraint firstItem="4fY-LS-dT0" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottomMargin" constant="-8" id="gE1-fc-f8e"/>
+                <constraint firstItem="zUf-w0-f4T" firstAttribute="trailing" secondItem="9RS-t4-jse" secondAttribute="trailing" id="xzT-YJ-IdJ"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
